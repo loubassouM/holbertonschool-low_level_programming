@@ -1,4 +1,4 @@
-    .file   "main.c"
-    .text
-    .globl  main
-    .type   main, @function
+.file   "main.c"
+.text
+.globl  main
+.type   main, @function
