@@ -9,14 +9,8 @@
 
 int main(void)
 {
-putchar('_');
-putchar('p');
-putchar('u');
-putchar('t');
-putchar('c');
-putchar('h');
-putchar('a');
-putchar('r');
-putchar('\n');
+char *str = "_putchar\n";
+while (*str)
+_putchar(*str++);
 return (0);
 }
