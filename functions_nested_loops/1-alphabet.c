@@ -4,13 +4,12 @@
 /**
  *
  */
+
 void print_alphabet(void)
 {
-    char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
-    char *ptr = alphabet;
+    char letter;
 
-    while (*ptr)
-        putchar(*ptr++);
-
+    for (letter = 'a'; letter <= 'z'; letter++)
+        putchar(letter);
     putchar('\n');
 }
