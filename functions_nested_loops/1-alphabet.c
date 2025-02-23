@@ -1,15 +1,18 @@
 #include "main.h"
-#include <stdio.h>
+#include <unistd.h>
 
 /**
  *
+ *
+ *
  */
-
 void print_alphabet(void)
 {
     char letter;
 
     for (letter = 'a'; letter <= 'z'; letter++)
-        putchar(letter);
-    putchar('\n');
+    {
+        write(1, &letter, 1);
+    }
+    write(1, "\n", 1);
 }
