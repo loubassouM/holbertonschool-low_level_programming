@@ -1,7 +1,5 @@
 #include "main.h"
-#include <unistd.h>
-
-void _putchar(char c);
+#include <stdio.h>
 
 /**
  *
@@ -9,6 +7,10 @@ void _putchar(char c);
 void print_alphabet(void)
 {
     char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
-    write(1, alphabet, 27);
-    _putchar('\n');
+    char *ptr = alphabet;
+
+    while (*ptr)
+        putchar(*ptr++);
+
+    putchar('\n');
 }
