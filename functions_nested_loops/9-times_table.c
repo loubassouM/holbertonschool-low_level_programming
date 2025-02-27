@@ -1,19 +1,23 @@
 #include "main.h"
-#include <stdio.h>
 
+/**
+ * times_table - Prints the 9 times table
+ */
 void times_table(void)
 {
-int i, j, prod;
-for (i = 0; i < 10; i++)
+int i = 0, j, prod;
+while (i < 10)
 {
-for (j = 0; j < 10; j++)
+j = 0;
+while (j < 10)
 {
 prod = i * j;
-if (j == 0)
-printf("%d", prod);
-else
-printf(", %2d", prod);
+if (j)
+_putchar(','), _putchar(' '), (prod < 10) ? _putchar(' ') : 0;
+if (prod >= 10)
+_putchar(prod / 10 + '0');
+_putchar(prod % 10 + '0'); j++;
 }
-printf("\n");
+_putchar('\n'); i++;
 }
 }
