@@ -5,9 +5,11 @@
 */
 void print_alphabet_x10(void)
 {
-char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
-int i;
+int i, j;
 for (i = 0; i < 10; i++)
-_putchar(alphabet[i % 27]);
+{
+for (j = 'a'; j <= 'z'; j++)
+_putchar(j);
 _putchar('\n');
+}
 }
