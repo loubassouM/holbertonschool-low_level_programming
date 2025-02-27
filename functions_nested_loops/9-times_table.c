@@ -16,8 +16,10 @@ if (j)
 _putchar(','), _putchar(' '), (prod < 10) ? _putchar(' ') : 0;
 if (prod >= 10)
 _putchar(prod / 10 + '0');
-_putchar(prod % 10 + '0'); j++;
+_putchar(prod % 10 + '0');
+j++;
 }
-_putchar('\n'); i++;
+_putchar('\n');
+i++;
 }
 }
