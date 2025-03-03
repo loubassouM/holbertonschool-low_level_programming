@@ -1,13 +1,14 @@
 #include "main.h"
-#include <stdio.h>
+#include <stdio>
 
+/**
+* puts2 - Prints every other character of a string.
+* @str: The input string.
+*/
 void puts2(char *str)
 {
-int i, len = 0;
-while (str[len] != '\0')
-len++;
-printf("Length: %d\n", len);
-for (i = 0; i < len; i += 2)
+int i;
+for (i = 0; str[i] != '\0'; i += 2)
 {
 _putchar(str[i]);
 }
