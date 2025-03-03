@@ -1,5 +1,13 @@
 #include <stdio.h>
 
+/**
+ * puts_half - prints the second half of a string.
+ * @str: The string to be printed.
+ *
+ * If the string length is odd, the function prints the last
+ * (length_of_string + 1) / 2 characters. If the string length is even,
+ * it prints the last length_of_string / 2 characters.
+ */
 void puts_half(char *str)
 {
 int len = 0;
