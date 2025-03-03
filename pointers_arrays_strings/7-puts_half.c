@@ -23,7 +23,7 @@ else
 start = (len + 1) / 2;
 }
 for (i = start; str[i] != '\0'; i++)
-putchar(str[i]);
-putchar('\n');
+write(1, &str[i], 1);
+write(1, "\n", 1);
 }
 }
