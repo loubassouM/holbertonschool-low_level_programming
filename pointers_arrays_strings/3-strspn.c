@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
 * _strspn - Gets the length of a prefix substring
@@ -24,9 +23,9 @@ break;
 }
 }
 if (!found)
-return (coun)t;
+return (count);
 count++;
 s++;
 }
-return (coun)t;
+return (count);
 }
