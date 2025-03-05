@@ -24,9 +24,9 @@ break;
 }
 }
 if (!found)
-return count;
+return (coun)t;
 count++;
 s++;
 }
-return count;
+return (coun)t;
 }
