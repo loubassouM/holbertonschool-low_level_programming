@@ -3,13 +3,13 @@
 #include <string.h>
 
 /**
- * str_concat - Concatenates two strings.
- * @s1: The first string.
- * @s2: The second string.
- *
- * Return: A pointer to the newly allocated space containing s1 followed by s2,
- *         or NULL on failure.
- */
+* str_concat - Concatenates two strings.
+* @s1: The first string.
+* @s2: The second string.
+*
+* Return: A pointer to the newly allocated space containing s1 followed by s2,
+*         or NULL on failure.
+*/
 char *str_concat(char *s1, char *s2)
 {
 char *concat_str;
