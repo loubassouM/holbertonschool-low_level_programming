@@ -1,31 +1,24 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <limits.h>
 
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
+void *_calloc(unsigned int nmemb, unsigned int size);
+
 int main(void)
 {
-    char *c;
-    int *i;
-    float *f;
-    double *d;
+    int *arr;
+    unsigned int i, n = 5;
 
-    c = malloc_checked(sizeof(char) * 1024);
-    printf("%p\n", (void *)c);
-    i = malloc_checked(sizeof(int) * 402);
-    printf("%p\n", (void *)i);
-    f = malloc_checked(sizeof(float) * 100000000);
-    printf("%p\n", (void *)f);
-    d = malloc_checked(INT_MAX);
-    printf("%p\n", (void *)d);
-    free(c);
-    free(i);
-    free(f);
-    free(d);
+    arr = (int *)_calloc(n, sizeof(int));
+    if (arr == NULL)
+    {
+        printf("Memory allocation failed\n");
+        return (1);
+    }
+
+    for (i = 0; i < n; i++)
+        printf("%d ", arr[i]); // Should print "0 0 0 0 0"
+
+    printf("\n");
+    free(arr);
     return (0);
 }
