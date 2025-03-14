@@ -1,24 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-void *_calloc(unsigned int nmemb, unsigned int size);
+#include "main.h"
 
 int main(void)
 {
-    int *arr;
-    unsigned int i, n = 5;
+    char *arr = create_array(5, 'A');
 
-    arr = (int *)_calloc(n, sizeof(int));
     if (arr == NULL)
     {
-        printf("Memory allocation failed\n");
+        printf("Failed to allocate memory\n");
         return (1);
     }
 
-    for (i = 0; i < n; i++)
-        printf("%d ", arr[i]);
-
+    for (int i = 0; i < 5; i++)
+        printf("%c ", arr[i]);
     printf("\n");
+
     free(arr);
     return (0);
 }
