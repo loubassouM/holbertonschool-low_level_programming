@@ -16,7 +16,7 @@ int main(void)
     }
 
     for (i = 0; i < n; i++)
-        printf("%d ", arr[i]); // Should print "0 0 0 0 0"
+        printf("%d ", arr[i]);
 
     printf("\n");
     free(arr);
