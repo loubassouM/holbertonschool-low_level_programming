@@ -2,7 +2,7 @@
 
 /**
 * sum_dlistint - Returns the sum of all the data (n) in a doubly linked list.
-* @head: Pointer to the head of the list.
+*@head: Pointer to the head of the list.
 *
 * Return: Sum of all the data, or 0 if the list is empty.
 */
@@ -14,6 +14,6 @@ while (head != NULL)
 sum += head->n;
 head = head->next;
 }
-return sum;
+return (sum);
 }
 
